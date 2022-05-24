@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <!-- Font awesom cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Custom css file link -->
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header section start  -->
+        <header class="header">
+            <section class="section-header">
+                <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo">
+                    <i class="fas fa-paper-plane"></i>
+                    Travel
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a data-goto=".home" data-aos="zoom-in-left" data-aos-delay="250" class="menu__link" >home</a>                        
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".about" data-aos="zoom-in-left" data-aos-delay="350" class="menu__link">about</a>                        
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".destination" data-aos="zoom-in-left" data-aos-delay="450" class="menu__link">destination</a>                        
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".services" data-aos="zoom-in-left" data-aos-delay="650" class="menu__link">services</a>                        
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".gallery" data-aos="zoom-in-left" data-aos-delay="750" class="menu__link">gallery</a>                        
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".blogs" data-aos="zoom-in-left" data-aos-delay="850" class="menu__link">blogs</a>                        
+                        </li>
+                    </ul>
+                </nav>
+                <a data-aos="zoom-in-left" data-aos-delay="950" href="#book-form" class="btn btn--header">book now</a>
+                <div class="menu-btn fas fa-bars" id="menu-btn"></div> 
+            </section>
+    
+        </header>     
+   
+    <!-- header section end  -->
+
+
+    <!-- home sactions start -->
+
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <p class="content__sup-title" data-aos="fade-up" data-aos-delay="150">Folow us</p>
+            <h1 class="content__title" data-aos="fade-up" data-aos-delay="300">to the unknow</h1>
+            <p class="content__text" data-aos="fade-up" data-aos-delay="450">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos quod est sit ipsum adipisci aut consequuntur? Debitis veniam natus voluptas dolore excepturi, repellat, dolor temporibus similique, nulla necessitatibus quidem perspiciatis?</p>
+            <a class="btn" href="#book-form" data-aos="fade-up" data-aos-delay="600">Book now</a>
+        </div>
+    
+    </section>
+        <!-- home sactions end -->
+    
+        <!-- boocking form sactions start -->
+    <section class="book-form" id="book-form">
+        <form class="form" action="">
+            <div class="form__inner" data-aos="zoom-in" data-aos-delay="150">
+                <span class="form__text">Where to?</span>
+                <input class="form__input" type="text" placeholder="Place name" value="">
+            </div>
+            <div class="form__inner" data-aos="zoom-in" data-aos-delay="250">
+                <span class="form__text">When?</span>
+                <input class="form__input" type="date" value="">
+            </div>
+            <div class="form__inner" data-aos="zoom-in" data-aos-delay="350">
+                <span class="form__text">How many?</span>
+                <input class="form__input" type="number" placeholder="Numbers of travelers" value="">
+            </div>
+            <input class="btn btn--form" type="submit" value="find now" data-aos="zoom-in" data-aos-delay="450">
+            
+        </form>   
+    
+    </section>
+
+
+    <!-- boocking form sactions end -->
+
+    <!-- about sections start -->
+<section  class="about" id="about" >
+    <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+        <video class="video" src="video/about-vid-1.mp4" muted autoplay loop></video>
+        <div class="controls" >
+            <span class="control-btn" data-src="video/about-vid-1.mp4"></span>
+            <span class="control-btn" data-src="video/about-vid-2.mp4"></span>
+            <span class="control-btn" data-src="video/about-vid-3.mp4"></span>
+        </div>
+    </div>
+    <div class="heading heading--about" data-aos="fade-left" data-aos-delay="300">
+        <p class="heading__sup-title heading--about__sup-title">Why choose us?</p>
+        <h3 class="heading__title heading--about__title">Nature`s Majesty Awaits You</h3>
+        <p class="heading__text heading--about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos sunt perspiciatis nisi dolore ducimus molestiae aperiam qui. Architecto, necessitatibus tenetur earum, repellendus ab reprehenderit quibusdam, maxime obcaecati nobis neque quos.</p>
+        <a class="btn btn--about" href="#" >Reed more</a>
+    </div>
+
+</section>
+    <!-- about sections end -->
+
+    <!-- destination sections start -->
+<section class="destination" id="destination">
+    <div class="heading">
+        <span class="heading__sup-title">our destination</span>
+        <h3 class="heading__title">make yours destination</h3>
+    </div>
+
+    <div class="cards-wrapper">
+
+        <article class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card__image">
+                <img src="img/contents/des-1.jpg" alt="">
+            </div>
+            <div class="card__content">
+                <h4 class="card__title">tours & travel</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur.</p>
+                <a class="card__link" href="#">read more 
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card__image">
+                <img src="img/contents/des-2.jpg" alt="">
+            </div>
+            <div class="card__content">
+                <h4 class="card__title">tours $ travel</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur.</p>
+                <a class="card__link" href="#">read more 
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card__image">
+                <img src="img/contents/des-3.jpg" alt="">
+            </div>
+            <div class="card__content">
+                <h4 class="card__title">tours $ travel</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur.</p>
+                <a class="card__link" href="#">read more 
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="400">
+            <div class="card__image">
+                <img src="img/contents/des-4.jpg" alt="">
+            </div>
+            <div class="card__content">
+                <h4 class="card__title">tours $ travel</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur.</p>
+                <a class="card__link" href="#">read more 
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="500">
+            <div class="card__image">
+                <img src="img/contents/des-5.jpg" alt="">
+            </div>
+            <div class="card__content">
+                <h4 class="card__title">tours $ travel</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur.</p>
+                <a class="card__link" href="#">read more 
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="600">
+            <div class="card__image">
+                <img src="img/contents/des-6.jpg" alt="">
+            </div>
+            <div class="card__content">
+                <h4 class="card__title">tours $ travel</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur.</p>
+                <a class="card__link" href="#">read more 
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="700">
+            <div class="card__image">
+                <img src="img/contents/des-7.jpg" alt="">
+            </div>
+            <div class="card__content">
+                <h4 class="card__title">tours $ travel</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur.</p>
+                <a class="card__link" href="#">read more 
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="800">
+            <div class="card__image">
+                <img src="img/contents/des-8.jpg" alt="">
+            </div>
+            <div class="card__content">
+                <h4 class="card__title">tours $ travel</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur.</p>
+                <a class="card__link" href="#">read more 
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+        </article>
+
+    </div>
+
+</section>    
+    
+    <!-- destination sections end -->
+
+    <!-- services sections start -->
+<section class="services" id="services">
+    <div class="heading">
+        <span class="heading__sup-title">our services</span>
+        <h2 class="heading__title">countless expericences</h2>
+    </div>
+    <div class="cards-wrapper cards-wrapper--services">
+
+        <article class="card cards--services" data-aos="zoom-in-up" data-aos-delay="150">
+            <i class="fas fa-globe services-img"></i>
+            <div class="card__content">
+                <h3 class="card__title">worldwide</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perferendis?</p>
+            </div>
+        </article>
+
+        <article class="card cards--services" data-aos="zoom-in-up" data-aos-delay="300">
+            <i class="fas fa-utensils services-img"></i>
+            <div class="card__content">
+                <h3 class="card__title">food & drinks</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perferendis?</p>
+            </div>
+        </article>
+        <article class="card cards--services" data-aos="zoom-in-up" data-aos-delay="450">
+            <i class="fas fa-hotel services-img"></i>
+            <div class="card__content">
+                <h3 class="card__title">affordable hotels</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perferendis?</p>
+            </div>
+        </article>
+        <article class="card cards--services" data-aos="zoom-in-up" data-aos-delay="600">
+            <i class="fas fa-wallet services-img"></i>
+            <div class="card__content">
+                <h3 class="card__title">affordable price</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perferendis?</p>
+            </div>
+        </article>
+        <article class="card cards--services" data-aos="zoom-in-up" data-aos-delay="750">
+            <i class="fas fa-headset services-img"></i>
+            <div class="card__content">
+                <h3 class="card__title">24/7 support</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perferendis?</p>
+            </div>
+        </article>
+        <article class="card cards--services" data-aos="zoom-in-up" data-aos-delay="900">
+            <i class="fas fa-hiking services-img"></i>
+            
+            <div class="card__content">
+                <h3 class="card__title">adventures</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perferendis?</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+    <!-- services sections end  -->
+
+    <!-- gallery sections start  -->
+<section class="gallery" id="gallery">
+    <div class="heading">
+        <span class="heading__sup-title">our gallery</span>
+        <h2 class="heading__title">we record memories</h2>
+    </div>
+    <div class="gallery-wrapper">
+        <article class="gallery__card" data-aos="zoom-in-up" data-aos-delay="100">
+                <img class="card__img" src="img/gallery/gallery-img-1.jpg">
+                <p class="card__text card__text--gallery">travel spot</p>
+                <h3 class="card__title card__title--gallery">iceland</h3>           
+        </article>
+        <article class="gallery__card" data-aos="zoom-in-up" data-aos-delay="200">
+                <img class="card__img" src="img/gallery/gallery-img-2.jpg">
+                <p class="card__text card__text--gallery">travel spot</p>
+                <h3 class="card__title card__title--gallery">greenland</h3>                
+        </article>
+        <article class="gallery__card" data-aos="zoom-in-up" data-aos-delay="300">
+                <img class="card__img" src="img/gallery/gallery-img-3.jpg">
+                <p class="card__text card__text--gallery">travel spot</p>
+                <h3 class="card__title card__title--gallery">alaska</h3>                
+        </article>
+        <article class="gallery__card" data-aos="zoom-in-up" data-aos-delay="400">
+                <img class="card__img" src="img/gallery/gallery-img-4.jpg">
+                <p class="card__text card__text--gallery">travel spot</p>
+                <h3 class="card__title card__title--gallery">thailand</h3>                
+        </article>
+        <article class="gallery__card" data-aos="zoom-in-up" data-aos-delay="500">
+                <img class="card__img" src="img/gallery/gallery-img-5.jpg">
+                <p class="card__text card__text--gallery">travel spot</p>
+                <h3 class="card__title card__title--gallery">brazil</h3>                
+        </article>
+        <article class="gallery__card">
+                <img class="card__img" src="img/gallery/gallery-img-6.jpg">
+                <p class="card__text card__text--gallery">travel spot</p>
+                <h3 class="card__title card__title--gallery">maldive</h3>                
+        </article>
+        <article class="gallery__card" data-aos="zoom-in-up" data-aos-delay="600">
+                <img class="card__img" src="img/gallery/gallery-img-7.jpg">
+                <p class="card__text card__text--gallery">travel spot</p>
+                <h3 class="card__title card__title--gallery">iceland</h3>
+        </article>
+        <article class="gallery__card" data-aos="zoom-in-up" data-aos-delay="700">
+                <img class="card__img" src="img/gallery/gallery-img-8.jpg">
+                <p class="card__text">travel spot</p>
+                <h3 class="card__title card__title--gallery">alaska</h3>
+        </article>
+        <article class="gallery__card" data-aos="zoom-in-up" data-aos-delay="800">
+                <img class="card__img" src="img/gallery/gallery-img-9.jpg">
+                <p class="card__text card__text--gallery">travel spot</p>
+                <h3 class="card__title card__title--gallery">maldive</h3>
+        </article>
+    </div>
+</section>
+
+    <!-- gallery sections end  -->
+
+    <!-- blogs sections start -->
+<section class="blogs" id="blogs">
+    <div class="heading">
+        <span class="heading__sup-title">blogs & posts</span>
+        <h2 class="heading__title">we untold stories</h2>
+    </div>
+    <div class="blogs-wrapper">
+
+        <article class="blog" data-aos="fade-up" data-aos-delay="150">
+            <div class="blog__image">
+                <img src="img/blogs/blog-1.jpg" alt="" class="blog__img">
+            </div>
+            <div class="blog__content">
+                <a href="#" class="blog__link">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+            <p class="blog__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem nesciunt ut eligendi dolore aut labore.
+            </p>
+            <div class="blog__icon">
+                <a href="#" class="blog__icon-link">
+                    <i class="fas fa-clock"><span>22 st may, 2021</span></i>
+                </a>
+                <a href="#" class="blog__icon-link">
+                    <i class="fas fa-user"><span>by admin</span></i>
+                </a>
+            </div>
+            </div>
+        </article>
+
+        <article class="blog" data-aos="fade-up" data-aos-delay="300">
+            <div class="blog__image">
+                <img src="img/blogs/blog-2.jpg" alt="" class="blog__img">
+            </div>
+            <div class="blog__content">
+                <a href="#" class="blog__link">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+            <p class="blog__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem nesciunt ut eligendi dolore aut labore.
+            </p>
+            <div class="blog__icon">
+                <a href="#" class="blog__icon-link">
+                    <i class="fas fa-clock"><span>22 st may, 2021</span></i>
+                </a>
+                <a href="#" class="blog__icon-link">
+                    <i class="fas fa-user"><span>by admin</span></i>
+                </a>
+            </div>
+            </div>
+        </article>
+
+        <article class="blog" data-aos="fade-up" data-aos-delay="450">
+            <div class="blog__image">
+                <img src="img/blogs/blog-1.jpg" alt="" class="blog__img">
+            </div>
+            <div class="blog__content">
+                <a href="#" class="blog__link">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+            <p class="blog__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem nesciunt ut eligendi dolore aut labore.
+            </p>
+            <div class="blog__icon">
+                <a href="#" class="blog__icon-link">
+                    <i class="fas fa-clock"><span>22 st may, 2021</span></i>
+                </a>
+                <a href="#" class="blog__icon-link">
+                    <i class="fas fa-user"><span>by admin</span></i>
+                </a>
+            </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+    <!-- blogs sections end -->
+
+<!-- review section starts  -->
+    <section class="review" >
+        
+        <div class="heading heading--review" data-aos="fade-right" data-aos-delay="250">
+            <p class="heading__sup-title">testimonials</p>
+            <h3 class="heading__title">good news from our clients</h3>
+            <p class="heading__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos sunt perspiciatis nisi dolore ducimus molestiae aperiam qui. Architecto, necessitatibus tenetur earum, repellendus ab reprehenderit quibusdam, maxime obcaecati nobis neque quos.</p>
+        </div>
+
+        <div class="review__items" data-aos="fade-right" data-aos-delay="500">
+            
+        <article class="review__item" >
+            <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+            <div class="review__user">
+                <img class="review__img" src="img/review/pic-1.png" alt="">
+                <div class="review__info">
+                    <h3 class="review__info-title">john deo</h3>
+                    <span class="review__info-text">designer</span>
+                </div>
+            </div>
+        </article>
+        
+        <article class="review__item">
+            <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+            <div class="review__user">
+                <img class="review__img" src="img/review/pic-2.png" alt="">
+                <div class="review__info">
+                    <h3 class="review__info-title">john deo</h3>
+                    <span class="review__info-text">designer</span>
+                </div>
+            </div>
+        </article>
+        <article class="review__item">
+            <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+            <div class="review__user">
+                <img class="review__img" src="img/review/pic-3.png" alt="">
+                <div class="review__info">
+                    <h3 class="review__info-title">john deo</h3>
+                    <span class="review__info-text">designer</span>
+                </div>
+            </div>
+        </article>
+        <article class="review__item">
+            <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+            <div class="review__user">
+                <img class="review__img" src="img/review/pic-4.png" alt="">
+                <div class="review__info">
+                    <h3 class="review__info-title">john deo</h3>
+                    <span class="review__info-text">designer</span>
+                </div>
+            </div>
+        </article>
+
+        </div>
+    
+    </section>
+<!-- review section end  -->
+
+<!-- banner section starts  -->
+
+<div class="banner">
+
+    <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
+        <div class="heading">
+            <p class="heading__sup-title">start your adventures</p>
+            <h3 class="heading__title">Let's Explore This World</h3>
+            <p class="heading__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos sunt perspiciatis nisi dolore ducimus molestiae aperiam qui. Architecto, necessitatibus tenetur earum, repellendus ab reprehenderit quibusdam, maxime obcaecati nobis neque quos.</p>
+            <a class="btn" href="#book-form" >book now</a>
+        </div>
+    </div>
+</div>
+<!-- banner section ends -->
+
+<!-- footer section starts  -->
+<section class="footer">
+
+    <div class="footer-wrapper">
+
+        <div class="footer-item footer__social" data-aos="fade-up" data-aos-delay="150">
+            <a href="#" class="footer__logo logo"> 
+                <i class="fas fa-paper-plane"></i>travel 
+            </a>
+            <p class="footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ad?</p>
+            <div class="footer__list">
+                <a href="#" class="footer__social-link fab fa-facebook-f"></a>
+                <a href="#" class="footer__social-link fab fa-twitter"></a>
+                <a href="#" class="footer__social-link fab fa-instagram"></a>
+                <a href="#" class="footer__social-link fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="footer-item footer__menu" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="footer__title">quick links</h3>
+            <a href="#home" class="footer__link footer__menu-link"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#about" class="footer__link footer__menu-link"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#destination" class="footer__link footer__menu-link"> <i class="fas fa-arrow-right"></i> destination </a>
+            <a href="#services" class="footer__link footer__menu-link"> <i class="fas fa-arrow-right"></i> services </a>
+            <a href="#gallery" class="footer__link footer__menu-link"> <i class="fas fa-arrow-right"></i> gallery </a>
+            <a href="#blogs" class="footer__link footer__menu-link"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="footer-item footer__contact" data-aos="fade-up" data-aos-delay="450">
+            <h3 class="footer__title">contact info</h3>
+            <p class="footer__link"> <i class="fas fa-map"></i> Kharkiv, Ukrain </p>
+            <p class="footer__link"> <i class="fas fa-phone"></i> <a class="tel" href="tel:+30002332211">+3(000)-233-22-11</a> </p>
+            <p class="footer__link"> <i class="fas fa-envelope"></i> webdewsv@gmail.com </p>
+            <p class="footer__link"> <i class="fas fa-clock"></i> 8:00 - 22:00 </p>
+        </div>
+
+        <div class="footer-item footer__form" data-aos="fade-up" data-aos-delay="600">
+            <h3  class="footer__title">newsletter</h3>
+            <p class="footer__text">subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" placeholder="enter your email" class="email form-footer-email" id="">
+                <input type="submit" value="subscribe" class="btn form-footer-btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="reserved">created by <span>WebdeWSV</span> | all rights reserved!</div>
+
+
+<!-- footer section ends -->
+    <!-- Custom js file link -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset:150,
+            once: true,
+        });    
+    </script>
+</body>
+</html>

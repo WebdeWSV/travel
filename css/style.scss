@@ -1,0 +1,892 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+img {
+    vertical-align: top;
+}
+
+$blue:rgb(41, 217, 213);
+$black:#111;
+$white:#fff;
+$light-color:#aaa;
+$bg-color:#222;
+$black-bg:rgba(17,17,17,.7);
+$border: 2px solid $blue;
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap:20px;
+}
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;    
+    scroll-padding-top: 90px;
+}
+
+section{
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body{
+    background-color: $black; 
+    overflow-x: hidden ;
+    
+}
+
+.btn{
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 20px;
+    color: $blue;
+    border: $border;
+    border-radius: 10px;
+    font-size: 18px;
+    &:hover{
+        background: $blue;
+        color: $black;
+    }
+}
+
+.heading{
+    text-align: center;
+    margin: 70px 0 50px;
+    &__sup-title{
+        color: $blue;
+        font-size: 34px;
+
+    }
+    &__title{
+        color: $white;
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    &__text{
+        color: $light-color;
+        font-size: 16px;        
+        margin: 20px 0;
+    }
+
+}
+
+
+// header section start 
+.section-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{    
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 8%;
+    background-color: $bg-color;
+    box-shadow: 0px 5px 5px -5px rgba(41, 217, 213, 0.4);
+}
+
+.logo{
+    font-size: 36px;
+    color: $white;
+    font-weight: 600;
+}
+
+.fa-paper-plane{
+    color: $blue;
+    margin-right: 20px;
+}
+
+.menu{
+    overflow: auto;
+    &__list{
+        display: flex;
+        margin:5px 20px;
+        flex-wrap: wrap;
+        
+    }
+    &__item{
+        margin: 5px 20px;
+    }
+    &__link{
+        // display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+        color: $light-color;
+
+        &:hover{
+            color: $blue;
+        }
+
+    }
+}
+
+
+.menu-btn{
+    font-size: 30px;
+    width: 30px;
+    color: $white;
+    cursor: pointer;
+    display: none;
+}
+
+// header section end
+
+//home sactions start
+.home{    
+    //scroll-margin-top: 100px;
+    margin-top: 90px;
+    width: 90%;
+    border-radius: 20px;    
+    background:linear-gradient($black-bg, $black-bg), url(../img/contents/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+
+}
+
+
+.content{
+    text-align: center;
+    padding-bottom: 40px;
+    &__sup-title{
+        font-weight: 600;
+        font-size: 44px;
+        margin-bottom: 8px;
+        color: transparent;
+        -webkit-text-stroke: 2px $white;
+        display: block;
+    }
+    &__title{
+        font-size: 64px;
+        color: $white;
+    }
+    &__text{
+        color: $light-color;
+        max-width: 80%;
+        font-size: 16px;
+        margin: 20px auto;
+        display: block;
+        line-height: 1.5;
+     }
+}   
+
+//home sactions end
+
+//boocking form sactions start
+
+.book-form{    
+    width: 80%;
+    margin: 1rem auto;
+    margin-top: -4%;
+    background: $bg-color;
+    border-radius: 15px;
+    box-shadow: 0 .5rem 1rem rgba(17,17,17,.3);
+    padding: 30px 10px;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+    &__inner{
+        flex: 1 1 23%;
+        min-width: 180px;
+    }
+    &__text{
+        margin-bottom: 70px;
+        font-size: 18px;
+        color: $light-color;
+        
+    }
+    &__input{
+        width: 100%;
+        padding: 10px 10px;
+        border-radius: 10px;
+        border: $border;
+        font-size: 18px;
+        color: $light-color;
+        text-transform: none;
+        background: none;
+        margin-top: 10px;
+    }
+}
+.btn--form{
+    background-color: transparent;
+    flex: 1 1 23%;
+    min-width: 180px;
+    margin-top: 17px;
+}
+
+//boocking form sactions end
+
+// about sections start
+.about{    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    margin-top: 60px;
+    .video-container{
+        flex: 1 1 45%;
+        .video{
+            border-radius: 10px;
+            width: 100%;
+        }
+        .controls{
+            text-align: center;
+            padding: 25px 0 0;
+            .control-btn{
+                display: inline-block;
+                margin: 0 20px;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background: $white;
+                cursor: pointer;
+                    &:hover{
+                    background:$blue;
+                    }
+        }
+        }
+    }
+}
+
+.heading--about{
+    justify-content: start;
+    flex: 1 1 45%;
+    margin: 0;   
+    &__sup-title{
+        font-size: 34px;
+        color: $blue;
+    }
+    &__title{
+        font-size: 40px;
+    }
+    &__text{
+        font-weight: 14px;
+        max-width: 100%;
+    }
+}
+
+// about sections end
+
+// destination sections start
+.cards-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+.card{
+    border-radius: 20px;
+    overflow: hidden;
+    background: $bg-color;
+    &__image{
+        height: 230px;
+        overflow: hidden;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            &:hover{
+                transform: scale(1.1)
+            }
+        }
+    }
+    &__content{
+        padding: 20px;
+        text-align: center;
+
+    }
+    &__title{
+        font-size: 26px;
+        color: $white;
+
+    }
+    &__text{
+        padding: 10px 0;
+        font-size: 18px;
+        color: $light-color;
+        line-height: 2;
+
+    }
+    &__link{
+        align-items: center;
+        font-size: 24px;
+        color: $blue;
+        cursor: pointer;
+        &:hover i{
+            padding-left: 20px;
+        }
+        i{
+            padding-left: 5px;
+        }
+    }
+}
+
+// destination sections end 
+
+// services sections start
+.cards-wrapper--services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    text-align: center;
+}
+.cards--services{
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid $black;
+    &:hover{
+        border: 2px solid $blue;
+    }
+}
+.services-img{
+    font-size: 65px;
+    color: $blue;
+    margin: 15px auto;
+}
+
+// services sections end
+
+// gallery sections start 
+
+
+
+.gallery-wrapper{
+    columns: 3 250px;
+    column-gap: 20px;
+}
+.gallery__card{
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+.card__img{
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.card__text--gallery{
+    padding-top: 0;
+}
+.card__title--gallery{
+    margin-bottom: 20px;
+}
+
+
+// gallery sections end  
+
+
+// blogs sections start
+
+.blogs-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+}
+.blog{
+    border-radius: 10px;
+    background-color: $bg-color;
+    overflow: hidden;
+    &__image{
+        height: 250px;
+        overflow: hidden;
+        width: 100%;
+    }
+    &__img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: inline-block;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__content{
+        padding: 15px;
+    }
+    &__link{
+        display: inline-block;
+        font-size: 18px;
+        color:$white;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        &:hover{
+            color: $blue;
+        }
+    }
+    &__text{
+        font-size: 14px;
+        color: $light-color;
+        line-height: 1.4;
+        margin-bottom: 10px;
+
+    }
+    &__icon{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    &__icon-link{
+        display: inline-block;
+        font-size: 14px;
+        color: $light-color;
+        text-transform: lowercase;
+        font-family: 'Poppins', sans-serif;
+        &:hover{
+            color: $blue;
+        }:before{
+            padding-right: 10px;
+            color:$blue
+            
+
+        }
+    }
+}
+// blogs sections end
+
+
+// review section starts
+.review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:15px;
+    margin-top: 70px;
+    &__items{
+        flex: 1 1 45%;        
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+    }
+    
+    &__item{
+        cursor: pointer;
+        flex:1 1 45%;
+        border-radius: 10px;
+        padding:15px;
+        background: $bg-color;
+        border: 2px solid $black;
+        &:hover{
+            border:$border;
+        }
+    }
+    &__text{        
+        font-size: 18px;
+        color:$blue;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+    &__user{        
+        display: flex;
+        align-items: center;
+        gap:8px;
+
+    }
+    &__img{        
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+
+    }
+    &__info-title{        
+        font-size: 28px;
+        color:$white;
+    }
+    &__info-text{
+        font-size: 14px;;
+        color:$light-color;
+        padding:10px 0;
+        line-height: 1.5;
+    }
+}
+.heading--review{
+    flex: 1 1 45%;
+}
+// review section end
+
+
+// banner section starts 
+
+.banner{
+    margin: 50px 0;
+    background:linear-gradient($black-bg, $black-bg), url(../img/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding:50px 20px;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+// banner section ends
+
+
+// footer section start
+.footer-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.footerr-item{
+    padding: 10px 0;    
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    &__list{
+        display: flex;
+        a{
+            margin-right:30px;
+        }
+        
+    }
+    &__logo{
+        padding-bottom: 10px;
+    }
+    &__social-link{
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        font-size: 20px;
+        border-radius: 50%;
+        font-size: 1.7;
+        border:$border;
+        color:$blue;
+        margin-right: 5px;
+        text-align: center;
+
+        &:hover{
+            background: $blue;
+            color:$black;
+        }
+
+    }
+    &__text{
+        font-size: 14px;
+        color:$light-color;
+        padding:10px 0;
+        line-height: 2;
+        
+    }
+        i:before {
+            padding-right: 5px;
+            color: $blue;
+        }
+    &__title{        
+        font-size: 22px;
+        color:$white;
+        padding:10px 0;
+    }
+    &__link{
+        font-size: 14px;
+        color:$light-color;
+        padding:10px 0;
+        display: block;
+        &:hover{
+            color:$blue;
+        }
+    }
+    &__menu-link{
+        &:hover{
+            padding-left: 10px;
+        }
+    }
+
+}
+.tel{
+        font-size: 14px;
+        color: #aaa;
+        display: inline-block;
+        &:hover{
+            color:$blue;
+        }
+}
+form .email{
+    width: 100%;
+    border-radius: 5px;
+    border:$border;
+    background: none;
+    font-size: 14px;
+    text-transform: none;
+    color:$light-color;
+    margin-bottom: 10px;
+    padding:10px 15px;
+}
+.form-footer-btn{
+    background-color: inherit;
+
+}
+
+// footer section ends
+.reserved{
+    margin-top: 30px;
+    background: $bg-color;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 10px;
+    color:$light-color;
+
+    span{
+        color:$blue;
+    }
+}
+
+
+
+
+// Media queris
+@media(max-width:1260px){
+    .header{
+        padding: 10px 15px;
+    }
+    section{
+        padding: 0 10px;
+    }
+    .logo{
+        font-size: 22px;
+    }
+    .menu{
+        &__link{
+            font-size: 18px;
+        }   
+    }   
+    
+}
+
+@media(max-width:1010px){
+    .cards-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .review{
+        flex-direction: column;        
+        margin-top: 0;
+    }
+}
+
+
+
+@media(max-width:960px){
+    body{
+        .lock{
+            overflow: hidden;
+        }
+    }
+    
+    .heading{
+        //margin: 60px 0 30px;
+        &__sup-title{
+            font-size: 28px;
+    
+        }
+        &__title{
+            font-size: 36px;
+        }
+        &__text{
+            font-size: 14px;    
+        }
+    }
+    .heading--about{
+        margin-bottom: 50px;
+    }
+    .about{    
+        margin-top: 0;
+        //scroll-margin-top: 0px;
+    }
+    .blogs-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .menu-btn{
+        display: inline-block; 
+    }
+    .menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+    .menu{
+        position: absolute;
+        top:99%;
+        left: 0;
+        right: 0;
+        background-color: $bg-color;
+        height: 100vh;
+        //height: 100vh;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        &.active{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+        &__list{
+            flex-direction: column;
+            align-items: end;
+            margin: 0;
+            overflow: auto;
+        }
+        &__link{
+            display: block;
+            font-size: 24px;
+            margin:15px 70px ;
+            
+        }     
+    }
+    .content{       
+        &__sup-title{
+            font-size: 32px;
+            -webkit-text-stroke: 1px $white;        
+        }
+        &__title{
+            font-size: 44px;
+        }
+        &__text{
+            font-size: 14px;
+        }
+    }  
+
+    .form{
+        &__text{            
+            font-size: 16px;     
+        }
+        &__input{           
+            font-size: 16px;            
+        }
+    }
+    .book-form{
+        margin-bottom: 60px;
+        padding-bottom: 10px;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        gap: 5px;
+        margin-top: 20px;
+        .content--about{
+            text-align: center;
+        }
+    }
+    .footer-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+@media(max-width:810px){
+    .cards-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .review{
+        &__text{        
+            font-size: 16px;
+        }
+        &__info-title{        
+            font-size: 22px;
+        }
+        &__info-text{
+            font-size: 12px;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .blogs-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media(max-width:545px){
+    html{
+        scroll-padding-top: 70px;
+    }
+    .header{    
+        padding: 12px 0;
+        
+    }
+    .btn--header{
+        display: none;
+    }
+    .fa-paper-plane{
+        margin-right: 10px;
+    }
+    .menu__list {
+        align-items: center;
+    }
+    .content{
+    max-width: 100%;
+        &__sup-title{
+            font-size: 30px;
+                    
+        }
+        &__title{
+            font-size: 40px;
+        }
+        &__text{
+            font-size: 14px;
+        }
+    } 
+    .form{
+        &__text{            
+            font-size: 14px;     
+        }
+        &__input{           
+            font-size: 14px;            
+        }
+    }
+    .cards-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .review{
+        &__item{
+        flex:1 1 100%;
+        }
+    }
+    .footer-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .footer-item{
+        text-align: center;
+    }
+    .footer__list{
+        justify-content: space-around;
+        a{
+            margin: 0;
+        }
+    }
+    .form-footer-btn{
+        width: 60%;
+    }
+}
